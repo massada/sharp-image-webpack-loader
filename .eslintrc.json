@@ -1,0 +1,8 @@
+{
+  "extends": "interactivethings",
+  "parser": "babel-eslint",
+  "globals": {
+    "expect": true,
+    "test": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "sharp-image-webpack-loader",
+  "version": "1.0.0",
+  "description": "Sharp image loader module for webpack",
+  "keywords": [
+    "sharp",
+    "image",
+    "webpack",
+    "loader"
+  ],
+  "homepage": "https://github.com/massada/sharp-image-webpack-loader",
+  "bugs": "https://github.com/massada/sharp-image-webpack-loader/issues",
+  "bin": "",
+  "license": "MIT",
+  "author": "José Massada <jose.massada@gmail.com>",
+  "repository": "massada/sharp-image-webpack-loader",
+  "main": "dist/cjs.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src -d dist --copy-files",
+    "clean": "del-cli dist",
+    "lint": "eslint --cache src",
+    "prebuild": "yarn run clean",
+    "prepublish": "yarn run build",
+    "security": "nsp check"
+  },
+  "engines": {
+    "node": ">= 6.9.0 <7.0.0 || >= 8.9.0"
+  },
+  "peerDependencies": {
+    "sharp": "^0.20.5",
+    "webpack": "^2.0.0 || ^3.0.0 || ^4.0.0"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cross-env": "^5.2.0",
+    "del-cli": "^1.1.0",
+    "eslint": "^5.3.0",
+    "eslint-config-webpack": "^1.2.5",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-prettier": "^2.6.2",
+    "nsp": "^3.2.1",
+    "prettier": "^1.14.2",
+    "sharp": "^0.20.5"
+  }
+}
